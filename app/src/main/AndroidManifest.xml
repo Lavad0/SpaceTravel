@@ -11,9 +11,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SpaceTravel"
         tools:targetApi="31">
+
+        <activity
+            android:name=".activity.LevelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LevelsActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activity.SettingsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.GameSurvivalLevel"
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activity.MainActivity"
             android:exported="true"

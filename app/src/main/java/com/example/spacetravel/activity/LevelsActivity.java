@@ -1,17 +1,18 @@
 package com.example.spacetravel.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 
-import com.example.spacetravel.databinding.ActivityMainBinding;
+import com.example.spacetravel.MyDialog;
+import com.example.spacetravel.databinding.ActivityLevelsBinding;
 
-public class MainActivity extends AppCompatActivity {
-    private ActivityMainBinding binding;
+public class LevelsActivity extends AppCompatActivity {
+    private ActivityLevelsBinding binding;
+    Intent intent;
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
@@ -30,22 +31,21 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityLevelsBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);
         setContentView(binding.getRoot());
 
-
-        binding.startgamebtn.setOnClickListener(v-> {
-            Intent intent = new Intent(MainActivity.this, LevelsActivity.class);
+        binding.button0.setOnClickListener(v -> {
+            intent = new Intent(LevelsActivity.this, GameSurvivalLevel.class);
             startActivity(intent);
         });
 
-        binding.settingsbtn.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+        binding.btnmenu.setOnClickListener(v -> {
+            intent = new Intent(LevelsActivity.this, MainActivity.class);
             startActivity(intent);
         });
-
 
 
     }
+
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SpaceTravel</string>
+    <string name="start_game">Начать игру</string>
+    <string name="parameters">Параметры</string>
+    <string name="menu">Меню</string>
+    <string name="control">Управление</string>
+    <string name="control1">Касание</string>
+    <string name="control2">Наклон</string>
+    <string name="language">Язык</string>
+    <string name="survival">Выживание</string>
+    <string name="time">Время: </string>
+    <string name="fuel">Топливо: </string>
+    <string name="record">Рекорд: </string>
+    <string name="music">Музыка</string>
+    <string name="sounds">Звуки</string>
+</resources>
